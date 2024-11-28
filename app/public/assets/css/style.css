@@ -1,6 +1,3 @@
-p{
-    background-color: wheat;
-}
 
 .img_Header{
     border: solid 5px black;
@@ -8,4 +5,18 @@ p{
 
 header, footer{
     background-color: red;
+    font-family: "dm sans", sans-serif;
 }   
+
+h1{
+    font-family: "Parkinsans", sans-serif;
+}
+
+h2{
+    font-family: "dm sans", sans-serif;
+}
+
+p{
+    font-family: "inter", sans-serif;
+    background-color: white;
+}
