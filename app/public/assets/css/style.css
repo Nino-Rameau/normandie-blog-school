@@ -1,3 +1,11 @@
 p{
     background-color: wheat;
 }
+
+.img_Header{
+    border: solid 5px black;
+}
+
+header, footer{
+    background-color: red;
+}   
