@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil</title>
+    <title>Post</title>
     <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/post.css" rel="stylesheet" />
     <link rel="icon" href="../assets/img/favicon.png" />
     <!--FAVICON A FAIRE-->
 
@@ -37,9 +38,8 @@
     </header>
 
     <main>
-      <h1>Faire un post</h1>
-      <h2>Sous Titre</h2>
-      <form>
+      <h1>Faire un post :</h1>
+      <form class="form">
         <label for="nom">Nom</label>
         <input type="text" id="nom" maxlength="20" required />
 
@@ -97,7 +97,7 @@
         <label for="titre">Titre</label>
         <input type="text" id="titre" maxlength="40" required />
 
-        <label for="description">Description</label>
+        <label for="description">Description (500 caractères maximum) </label>
         <textarea
           id="description"
           maxlength="500"
@@ -106,7 +106,9 @@
         ></textarea>
 
         <label for="fichier">Photo ou Fichier</label>
-        <input type="file" id="fichier" />
+        <input type="file" size="10mo" id="fichier" />
+
+        <input type="submit" value="Envoyer" />
       </form>
     </main>
     <footer>
