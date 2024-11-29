@@ -1,37 +1,118 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Accueil</title>
-        <link href="../assets/css/style.css" rel="stylesheet" />
-        <link rel="icon" href="../assets/img/favicon.png" />       <!--FAVICON A FAIRE-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link rel="icon" href="../assets/img/favicon.png" />
+    <!--FAVICON A FAIRE-->
 
-        <!--typo-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;1,9..40,500&family=Inter:ital,opsz@0,14..32;1,14..32&family=Parkinsans:wght@800&display=swap" rel="stylesheet">
+    <!--typo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;1,9..40,500&family=Inter:ital,opsz@0,14..32;1,14..32&family=Parkinsans:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img class="img_Header" src="../assets/img/img_tempo.png" alt="logo" />
+      </a>
+      <a class="bouton" href="dev_web.html"
+        ><button>Développement web</button></a
+      >
+      <a class="bouton" href="com_graph.html"
+        ><button>Communication Graphique</button></a
+      >
+      <a class="bouton" href="com_digit.html"
+        ><button>Communication Digital</button></a
+      >
+      <a class="bouton" href="marketing_digit.html"
+        ><button>Marketing Digital</button></a
+      >
+      <a class="bouton" href="post.html"><button>Faire un post</button></a>
+    </header>
 
-    </head>
-    <body>
-        <header>
-            <a href="../index.html"> <img class="img_Header" src="../assets/img/img_tempo.png" alt="logo" /> </a>
-            <a class="bouton" href="dev_web.html"><button>Développement web</button></a>
-            <a class="bouton" href="com_graph.html"><button>Communication Graphique</button></a>
-            <a class="bouton" href="com_digit.html"><button>Communication Digital</button></a>
-            <a class="bouton" href="marketing_digit.html"><button>Marketing Digital</button></a>
-            <a class="bouton" href="post.html"><button>Faire un post</button></a>
-        </header>
+    <main>
+      <h1>Faire un post</h1>
+      <h2>Sous Titre</h2>
+      <form>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" maxlength="20" required />
 
-        <main>
-            <h1>Faire un post</h1>
-            <h2>Sous Titre</h2>
-            <p>Deserunt sint quis commodo esse eu veniam irure velit aliquip sit. Duis non esse nostrud non reprehenderit id occaecat tempor sit fugiat. Culpa culpa anim cillum dolore reprehenderit cupidatat sint nostrud eiusmod commodo culpa</p>
-        </main>
-        <footer>
-            Copyright © 2024 Normandie Blog School
-            <br>
-            Mentions légales | Conditions Générales
-        </footer>
-    </body>
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" maxlength="20" required />
+
+        <fieldset>
+          <legend>Votre année</legend>
+          <div>
+            <input type="radio" id="annee1" name="annee" value="1" />
+            <label for="annee1">année 1</label>
+          </div>
+          <div>
+            <input type="radio" id="annee2" name="annee" value="2" />
+            <label for="annee2">année 2</label>
+          </div>
+          <div>
+            <input type="radio" id="annee3" name="annee" value="3" />
+            <label for="annee3">année 3</label>
+          </div>
+          <div>
+            <input type="radio" id="annee4" name="annee" value="4" />
+            <label for="annee4">année 4</label>
+          </div>
+          <div>
+            <input type="radio" id="annee5" name="annee" value="5" />
+            <label for="annee5">année 5</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>La spécialité de votre post :</legend>
+          <div>
+            <input type="radio" id="annee1" name="spe" value="dev" />
+            <label for="dev">Développement Web</label>
+          </div>
+          <div>
+            <input type="radio" id="annee2" name="spe" value="com-graph" />
+            <label for="com-graph">Communication Graphique</label>
+          </div>
+          <div>
+            <input type="radio" id="annee3" name="spe" value="com-digit" />
+            <label for="com-digit">Communication Digital</label>
+          </div>
+          <div>
+            <input type="radio" id="annee4" name="spe" value="market-digit" />
+            <label for="market-digit">Marketing Digital</label>
+          </div>
+          <div>
+            <input type="radio" id="annee5" name="spe" value="autre" />
+            <label for="autre">Autre</label>
+          </div>
+        </fieldset>
+
+        <label for="titre">Titre</label>
+        <input type="text" id="titre" maxlength="40" required />
+
+        <label for="description">Description</label>
+        <textarea
+          id="description"
+          maxlength="500"
+          rows="10"
+          required
+        ></textarea>
+
+        <label for="fichier">Photo ou Fichier</label>
+        <input type="file" id="fichier" />
+      </form>
+    </main>
+    <footer>
+      Copyright © 2024 Normandie Blog School
+      <br />
+      Mentions légales | Conditions Générales
+    </footer>
+  </body>
 </html>
