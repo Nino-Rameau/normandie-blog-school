@@ -19,6 +19,8 @@ footer {
   gap: 1em; /*ecart entre bouton*/
   display: flex;
   height: 5em;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -33,4 +35,16 @@ h2 {
 p {
   font-family: "inter", sans-serif;
   background-color: white;
+}
+
+button {
+  cursor: pointer;
+  background-color: #e69820;
+  border-radius: 20px;
+  outline: none;
+  padding: 1em 1.5em;
+  font-weight: normal;
+  font-size: 1.25em;
+  background-size: 100% auto;
+  border: none;
 }
