@@ -3,8 +3,14 @@
     --couleur-header-footer: #6E8191;
 }
 
+
+
 .img_Header{
     border: solid 5px black;
+}
+
+body{
+    background-color: var(--couleur-fond);
 }
 
 header, footer{
