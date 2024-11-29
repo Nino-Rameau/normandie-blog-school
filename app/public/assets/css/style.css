@@ -1,9 +1,24 @@
 :root {
-  --color-primary: purple;
+  --couleur-fond: #666159;
+  --couleur-header-footer: #6e8191;
 }
 
 .img_Header {
   border: solid 5px black;
+}
+
+body {
+  background-color: var(--couleur-fond);
+}
+
+header,
+footer {
+  background-color: var(--couleur-header-footer);
+  font-family: "dm sans", sans-serif;
+}
+
+h1 {
+  font-family: "Parkinsans", sans-serif;
 }
 
 header,
