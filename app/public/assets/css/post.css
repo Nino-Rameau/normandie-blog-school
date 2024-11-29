@@ -11,6 +11,7 @@ main {
 .form input[type="text"],
 .form input[type="file"],
 .form input[type="submit"],
+.form input[type="reset"],
 .form textarea {
   display: block;
   padding: 5px;
@@ -18,7 +19,8 @@ main {
   box-sizing: border-box;
 }
 
-.form input[type="submit"] {
+.form input[type="submit"],
+.form input[type="reset"] {
   background-color: #e69820;
   color: white;
   border-radius: 30px;
@@ -32,4 +34,11 @@ fieldset div {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
+}
+
+.form input[type="submit"]:hover,
+.form input[type="reset"]:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 30px;
 }

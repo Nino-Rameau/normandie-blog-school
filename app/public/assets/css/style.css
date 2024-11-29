@@ -15,6 +15,10 @@ header,
 footer {
   background-color: var(--couleur-header-footer);
   font-family: "dm sans", sans-serif;
+  margin: auto;
+  gap: 1em; /*ecart entre bouton*/
+  display: flex;
+  height: 5em;
 }
 
 h1 {

@@ -49,7 +49,7 @@
         <fieldset>
           <legend>Votre année</legend>
           <div>
-            <input type="radio" id="annee1" name="annee" value="1" />
+            <input type="radio" id="annee1" name="annee" value="1" required />
             <label for="annee1">année 1</label>
           </div>
           <div>
@@ -73,7 +73,7 @@
         <fieldset>
           <legend>La spécialité de votre post :</legend>
           <div>
-            <input type="radio" id="annee1" name="spe" value="dev" />
+            <input type="radio" id="annee1" name="spe" value="dev" required />
             <label for="dev">Développement Web</label>
           </div>
           <div>
@@ -109,6 +109,8 @@
         <input type="file" size="10mo" id="fichier" />
 
         <input type="submit" value="Envoyer" />
+
+        <input type="reset" value="Vider le post" />
       </form>
     </main>
     <footer>
