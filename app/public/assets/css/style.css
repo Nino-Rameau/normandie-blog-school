@@ -19,16 +19,6 @@ footer {
 
 h1 {
   font-family: "Parkinsans", sans-serif;
-}
-
-header,
-footer {
-  background-color: var(--color-primary);
-  font-family: "dm sans", sans-serif;
-}
-
-h1 {
-  font-family: "Parkinsans", sans-serif;
   color: var(--color-primary);
 }
 
