@@ -48,3 +48,65 @@ button {
   background-size: 100% auto;
   border: none;
 }
+
+.carte-ligne-x4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carte {
+  width: 20em;
+  height: 22.5em;
+  background: #171717;
+  transition: 1s ease-in-out;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.description {
+  font-weight: 400;
+  color: white;
+  background-color: #171717;
+  display: block;
+  text-align: center;
+  font-size: 0.72em;
+  margin: 1em;
+}
+
+.carte a {
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.carte a:hover {
+  color: red;
+}
+
+.carte button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: 0.4s ease-in-out;
+}
+
+.carte button:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+}
