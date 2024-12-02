@@ -3,25 +3,25 @@
   --couleur-header-footer: #6e8191;
 }
 
-.img_Header {
-  width: auto;
-  max-width: 10%;
-  height: auto;
-  max-height: 5em;
-  position:fixed;
-  left: 3em;
-  bottom: 41em;
+.imgheader {
+  display: flex;
+  width: 100px;
+  align-items: center;
+}
+
+.img-alarme {
+  width: 80px;
+  align-items: center;
 }
 
 body {
   background-color: var(--couleur-fond);
 }
 
-header,
+header nav,
 footer {
-  background-color: var(--couleur-header-footer);
+  background-color: #000000;
   font-family: "dm sans", sans-serif;
-  margin: auto;
   gap: 1em; /*ecart entre bouton*/
   display: flex;
   height: 5em;
@@ -43,16 +43,19 @@ p {
   background-color: white;
 }
 
-button {
+.bouton {
   cursor: pointer;
-  background-color: #e69820;
+  background-color: #ffffff;
   border-radius: 20px;
   outline: none;
-  padding: 1em 1.5em;
+  padding: 0.5em 1em;
   font-weight: normal;
-  font-size: 1.25em;
+  font-size: 1em;
   background-size: 100% auto;
   border: none;
+  font-family: "Parkinsans", sans-serif;
+  text-decoration: none;
+  color: #000000;
 }
 
 .carte-ligne-x4 {
