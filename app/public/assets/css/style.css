@@ -38,9 +38,14 @@ h2 {
   font-family: "dm sans", sans-serif;
 }
 
-p {
+p,
+h5 {
   font-family: "inter", sans-serif;
   background-color: white;
+}
+
+h5 {
+  text-align: center;
 }
 
 .bouton {
