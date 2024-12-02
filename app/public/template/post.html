@@ -6,8 +6,7 @@
     <title>Post</title>
     <link href="../assets/css/style.css" rel="stylesheet" />
     <link href="../assets/css/post.css" rel="stylesheet" />
-    <link rel="icon" href="../assets/img/favicon.png" />
-    <!--FAVICON A FAIRE-->
+    <link rel="icon" href="../assets/img/NBS.svg" />
 
     <!--typo-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -72,33 +71,35 @@
           <legend>La spécialité de votre post :</legend>
           <div>
             <input type="radio" id="annee1" name="spe" value="dev" required />
-            <label for="dev">Développement Web</label>
+            <label for="dev" class="dev-web">Développement Web</label>
           </div>
           <div>
             <input type="radio" id="annee2" name="spe" value="com-graph" />
-            <label for="com-graph">Communication Graphique</label>
+            <label for="com-graph" class="com-graph"
+              >Communication Graphique</label
+            >
           </div>
           <div>
             <input type="radio" id="annee3" name="spe" value="com-digit" />
-            <label for="com-digit">Communication Digital</label>
+            <label for="com-digit" class="com-digit"
+              >Communication Digital</label
+            >
           </div>
           <div>
             <input type="radio" id="annee4" name="spe" value="market-digit" />
-            <label for="market-digit">Marketing Digital</label>
-          </div>
-          <div>
-            <input type="radio" id="annee5" name="spe" value="autre" />
-            <label for="autre">Autre</label>
+            <label for="market-digit" class="market-digit"
+              >Marketing Digital</label
+            >
           </div>
         </fieldset>
 
-        <label for="titre">Titre</label>
-        <input type="text" id="titre" maxlength="40" required />
+        <label for="titre">Titre (65 caractères maximum)</label>
+        <input type="text" id="titre" maxlength="65" required />
 
-        <label for="description">Description (500 caractères maximum) </label>
+        <label for="description">Description (150 caractères maximum) </label>
         <textarea
           id="description"
-          maxlength="500"
+          maxlength="150"
           rows="10"
           required
         ></textarea>

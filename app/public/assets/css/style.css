@@ -1,23 +1,17 @@
 :root {
   --couleur-fond: #666159;
   --couleur-header-footer: #6e8191;
-}
-
-.imgheader {
-  display: flex;
-  width: 100px;
-  align-items: center;
-}
-
-.img-alarme {
-  width: 80px;
-  align-items: center;
+  --tag-dev-web: #fcc82d;
+  --tag-com-graph: #28adaa;
+  --tag-com-digit: #623e95;
+  --tag-market-digit: #f25d4d;
 }
 
 body {
   background-color: var(--couleur-fond);
 }
 
+/* HEADER ET FOOTER */
 header nav,
 footer {
   background-color: #000000;
@@ -29,6 +23,24 @@ footer {
   align-items: center;
 }
 
+footer {
+  color: #ffffff;
+}
+
+.imgheader {
+  display: flex;
+  width: 100px;
+  align-items: center;
+}
+
+/* du header*/
+.img-alarme {
+  width: 80px;
+  align-items: center;
+}
+
+/* TYPOGRAPHIE */
+/* ATTENTION PROPRIETE DE h1 ET h2 aussi dans CARTE plus bas*/
 h1 {
   font-family: "Parkinsans", sans-serif;
   color: var(--color-primary);
@@ -38,16 +50,18 @@ h2 {
   font-family: "dm sans", sans-serif;
 }
 
-p,
 h5 {
+  font-family: "inter", sans-serif;
+  background-color: white;
+  text-align: center;
+}
+
+p {
   font-family: "inter", sans-serif;
   background-color: white;
 }
 
-h5 {
-  text-align: center;
-}
-
+/* BOUTON */
 .bouton {
   cursor: pointer;
   background-color: #ffffff;
@@ -61,6 +75,17 @@ h5 {
   font-family: "Parkinsans", sans-serif;
   text-decoration: none;
   color: #000000;
+}
+
+/* CARTE */
+
+h1,
+h2 {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1em;
 }
 
 .carte-ligne-x4 {
@@ -79,13 +104,8 @@ h5 {
   margin: 2em;
 }
 
-h1,
-h2 {
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  display: block;
-  font-size: 1em;
+.titre {
+  font-size: 0.9em;
 }
 
 .description {
@@ -94,20 +114,11 @@ h2 {
   background-color: #171717;
   display: block;
   text-align: center;
-  font-size: 0.72em;
+  font-size: 0.8em;
   margin: 1em;
 }
 
-.carte a {
-  color: white;
-  transition: 0.4s ease-in-out;
-}
-
-.carte a:hover {
-  color: red;
-}
-
-.carte button {
+.carte .bouton-carte {
   padding: 0.8em 1.7em;
   display: block;
   margin: auto;
@@ -117,10 +128,36 @@ h2 {
   background: #ffffff;
   color: rgb(0, 0, 0);
   transition: 0.4s ease-in-out;
+  text-decoration: none;
 }
 
-.carte button:hover {
+.carte .bouton-carte:hover {
   background: red;
   color: white;
   cursor: pointer;
+}
+
+/* TAG CARTE */
+
+.tag {
+  padding: 0.4em 0.9em;
+  display: inline-block;
+  border-radius: 20px;
+  color: #000000;
+}
+
+.dev-web {
+  background-color: var(--tag-dev-web);
+}
+
+.com-graph {
+  background-color: var(--tag-com-graph);
+}
+
+.market-digit {
+  background-color: var(--tag-market-digit);
+}
+
+.com-digit {
+  background-color: var(--tag-com-digit);
 }
