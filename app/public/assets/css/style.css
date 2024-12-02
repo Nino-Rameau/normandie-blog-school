@@ -8,9 +8,9 @@
   max-width: 10%;
   height: auto;
   max-height: 5em;
-  position: absolute;
-  left: 2em;
-  bottom: 40.5em;
+  position:fixed;
+  left: 3em;
+  bottom: 41em;
 }
 
 body {
