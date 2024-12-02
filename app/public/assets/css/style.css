@@ -11,6 +11,7 @@
   position: absolute;
   left: 2em;
   bottom: 40.5em;
+}
 
 body {
   background-color: var(--couleur-fond);
