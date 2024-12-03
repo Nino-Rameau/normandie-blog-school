@@ -50,12 +50,6 @@ h2 {
   font-family: "dm sans", sans-serif;
 }
 
-h5 {
-  font-family: "inter", sans-serif;
-  background-color: white;
-  text-align: center;
-}
-
 p {
   font-family: "inter", sans-serif;
   background-color: white;
@@ -90,18 +84,23 @@ h2 {
 
 .carte-ligne-x4 {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
 }
 
 .carte {
-  width: 20em;
-  height: 22.5em;
-  background: #171717;
-  transition: 1s ease-in-out;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  margin: 2em;
+  margin: 10px 10px;
+  width: 22%;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  border-style: solid;
+  border: 1px;
+  min-width: 120px;
+  background-color: #171717;
 }
 
 .titre {
@@ -118,8 +117,15 @@ h2 {
   margin: 1em;
 }
 
+h5 {
+  font-family: "inter", sans-serif;
+  background-color: white;
+  text-align: center;
+  padding: 0.3em;
+}
+
 .carte .bouton-carte {
-  padding: 0.8em 1.7em;
+  padding: 0.5em 1.7em;
   display: block;
   margin: auto;
   border-radius: 25px;
@@ -129,6 +135,7 @@ h2 {
   color: rgb(0, 0, 0);
   transition: 0.4s ease-in-out;
   text-decoration: none;
+  max-width: min-content;
 }
 
 .carte .bouton-carte:hover {
@@ -140,10 +147,11 @@ h2 {
 /* TAG CARTE */
 
 .tag {
-  padding: 0.4em 0.9em;
-  display: inline-block;
+  padding: 0.6em 1.2em;
   border-radius: 20px;
   color: #000000;
+  max-width: min-content;
+  margin: auto;
 }
 
 .dev-web {
