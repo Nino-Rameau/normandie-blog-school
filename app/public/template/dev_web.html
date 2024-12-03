@@ -16,24 +16,35 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="positionlogo" href="..\index.html">
-          <img class="imgheader" src="..\assets\img\NBS.svg" alt="logo" />
-        </a>
-
-        <a href="dev_web.html" class="bouton">Développement web</a>
-        <a href="com_graph.html" class="bouton">Communication Graphique</a>
-        <a href="com_digit.html" class="bouton">Communication Digital</a>
-        <a href="marketing_digit.html" class="bouton">Marketing Digital</a>
-        <a href="post.html" class="bouton">Faire un post</a>
-        <a href="../template/admin.html">
+    <header class="header">
+      <a class="positionlogo" href="/">
+        <img class="imgheader" src="../assets/img/NBS.svg" alt="logo" />
+      </a>
+      <nav class="header-nav">
+        <a href="template/post.html" class="bouton btn-creer-post">
+          Créer un post</a
+        >
+        <a href="template/admin.html">
           <img src="../assets/img/alarme.gif" alt="Admin" class="img-alarme" />
         </a>
       </nav>
     </header>
 
     <main>
+      <nav class="filters">
+        <a href="dev_web.html" class="bouton btn-spe-dev active"
+          >Développement web</a
+        >
+        <a href="com_graph.html" class="bouton btn-spe-com-graph">
+          Communication Graphique
+        </a>
+        <a href="com_digit.html" class="bouton btn-spe-com-digi">
+          Communication Digital
+        </a>
+        <a href="marketing_digit.html" class="bouton btn-spe-market-digi">
+          Marketing Digital
+        </a>
+      </nav>
       <div class="carte-ligne-x4">
         <div class="carte">
           <h1>Comment faire pour héberger un site gratuitement ?</h1>

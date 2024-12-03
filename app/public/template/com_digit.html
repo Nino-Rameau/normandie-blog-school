@@ -16,39 +16,51 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="positionlogo" href="..\index.html">
-          <img class="imgheader" src="..\assets\img\NBS.svg" alt="logo" />
-        </a>
-
-        <a href="dev_web.html" class="bouton">Développement web</a>
-        <a href="com_graph.html" class="bouton">Communication Graphique</a>
-        <a href="com_digit.html" class="bouton">Communication Digital</a>
-        <a href="marketing_digit.html" class="bouton">Marketing Digital</a>
-        <a href="post.html" class="bouton">Faire un post</a>
-        <a href="../template/admin.html">
+    <header class="header">
+      <a class="positionlogo" href="/">
+        <img class="imgheader" src="../assets/img/NBS.svg" alt="logo" />
+      </a>
+      <nav class="header-nav">
+        <a href="template/post.html" class="bouton btn-creer-post">
+          Créer un post</a
+        >
+        <a href="template/admin.html">
           <img src="../assets/img/alarme.gif" alt="Admin" class="img-alarme" />
         </a>
       </nav>
     </header>
 
     <main>
-      <div class="carte">
-        <h1>Quels types de contenu fonctionnent le mieux sur LinkedIn ?</h1>
-        <h2 class="tag com-digit">Communication Digitale</h2>
-        <p class="description">
-          Salut, je dois publier pour une page LinkedIn d’entreprise, mais je ne
-          sais pas trop quel format ou ton utiliser. Vous avez des idées ou
-          exemples de posts qui marchent bien ?
-        </p>
-        <a
-          href="../template/post-com-digit/com-digit-30-11-24-18h01.html"
-          class="bouton-carte"
-        >
-          Voir
+      <nav class="filters">
+        <a href="dev_web.html" class="bouton btn-spe-dev">Développement web</a>
+        <a href="com_graph.html" class="bouton btn-spe-com-graph">
+          Communication Graphique
         </a>
-        <h5>Simon Dubosc 30/11/24 18h01</h5>
+        <a href="com_digit.html" class="bouton btn-spe-com-digi">
+          Communication Digital
+        </a>
+        <a href="marketing_digit.html" class="bouton btn-spe-market-digi">
+          Marketing Digital
+        </a>
+      </nav>
+
+      <div class="carte-ligne-x4">
+        <div class="carte">
+          <h1>Quels types de contenu fonctionnent le mieux sur LinkedIn ?</h1>
+          <h2 class="tag com-digit">Communication Digitale</h2>
+          <p class="description">
+            Salut, je dois publier pour une page LinkedIn d’entreprise, mais je
+            ne sais pas trop quel format ou ton utiliser. Vous avez des idées ou
+            exemples de posts qui marchent bien ?
+          </p>
+          <a
+            href="../template/post-com-digit/com-digit-30-11-24-18h01.html"
+            class="bouton-carte"
+          >
+            Voir
+          </a>
+          <h5>Simon Dubosc 30/11/24 18h01</h5>
+        </div>
       </div>
     </main>
     <footer>

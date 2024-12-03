@@ -9,19 +9,30 @@
 
 body {
   background-color: var(--couleur-fond);
+  margin: 0;
 }
 
 /* HEADER ET FOOTER */
-header nav,
+.header,
 footer {
   background-color: #000000;
   font-family: "dm sans", sans-serif;
-  gap: 1em; /*ecart entre bouton*/
-  display: flex;
+  gap: 1rem; /*ecart entre bouton*/
   height: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.header-nav {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: -10px -10px -10px -10px;
+  gap: 1rem;
 }
 
 footer {
@@ -70,6 +81,39 @@ p {
   font-family: "Parkinsans", sans-serif;
   text-decoration: none;
   color: #000000;
+  transition: transform 0.3s ease;
+}
+
+.btn-creer-post {
+  background-color: #fcc82d;
+  transition: transform 0.3s ease;
+}
+
+.btn-creer-post:hover {
+  transform: scale(1.1);
+}
+
+.btn-spe-dev:hover {
+  background-color: var(--tag-dev-web);
+  transform: scale(1.1);
+}
+.btn-spe-dev.active {
+  background-color: var(--tag-dev-web);
+}
+
+.btn-spe-com-graph:hover {
+  background-color: var(--tag-com-graph);
+  transform: scale(1.1);
+}
+
+.btn-spe-com-digi:hover {
+  background-color: var(--tag-com-digit);
+  transform: scale(1.1);
+}
+
+.btn-spe-market-digi:hover {
+  background-color: var(--tag-market-digit);
+  transform: scale(1.1);
 }
 
 /* CARTE */
@@ -149,11 +193,13 @@ h5 {
 /* TAG CARTE */
 
 .tag {
-  padding: 0.6em 1.2em;
+  padding: 0.25em 0.5em;
   border-radius: 20px;
   color: #000000;
   max-width: min-content;
   margin: auto;
+  font-size: 0.85rem;
+  white-space: nowrap;
 }
 
 .dev-web {
@@ -170,4 +216,12 @@ h5 {
 
 .com-digit {
   background-color: var(--tag-com-digit);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
