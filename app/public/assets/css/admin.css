@@ -1,0 +1,24 @@
+caption {
+  padding-bottom: 15px;
+  background-color: white;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  margin-bottom: 5em;
+  background-color: white;
+}
+
+td,
+th {
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.croix {
+  width: 50px;
+  cursor: pointer;
+}

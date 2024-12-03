@@ -21,6 +21,7 @@ footer {
   height: 5em;
   justify-content: center;
   align-items: center;
+  margin: -10px -10px -10px -10px;
 }
 
 footer {
@@ -29,7 +30,7 @@ footer {
 
 .imgheader {
   display: flex;
-  width: 100px;
+  width: 150px;
   align-items: center;
 }
 
@@ -89,6 +90,7 @@ h2 {
   justify-content: center;
   margin: auto;
   width: 100%;
+  margin-bottom: 5em;
 }
 
 .carte {
