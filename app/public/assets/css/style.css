@@ -97,7 +97,7 @@ p {
   background-color: var(--tag-dev-web);
   transform: scale(1.1);
 }
-.btn-spe-dev.active {
+.btn-spe-dev:active {
   background-color: var(--tag-dev-web);
 }
 
@@ -105,17 +105,35 @@ p {
   background-color: var(--tag-com-graph);
   transform: scale(1.1);
 }
+.btn-spe-dev:active {
+  background-color: var(--tag-com-graph);
+}
 
 .btn-spe-com-digi:hover {
   background-color: var(--tag-com-digit);
   transform: scale(1.1);
+}
+.btn-spe-dev:active {
+  background-color: var(--tag-com-digit);
 }
 
 .btn-spe-market-digi:hover {
   background-color: var(--tag-market-digit);
   transform: scale(1.1);
 }
+.btn-spe-dev:active {
+  background-color: var(--tag-market-digit);
+}
 
+.tout:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+.tout:active {
+  background-color: black;
+  color: white;
+}
 /* CARTE */
 
 h1,
