@@ -13,8 +13,7 @@ body {
 }
 
 /* HEADER ET FOOTER */
-.header,
-footer {
+.header {
   background-color: #000000;
   font-family: "dm sans", sans-serif;
   gap: 1rem; /*ecart entre bouton*/
@@ -38,6 +37,10 @@ footer {
 footer {
   color: #ffffff;
   text-align: center;
+  background-color: #000000;
+  font-family: "dm sans", sans-serif;
+  height: 5em;
+  margin-top: 40px;
 }
 
 .imgheader {
@@ -245,4 +248,11 @@ h5 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+}
+
+.post .btn-retour-post {
+  color: red;
+  height: 120px;
+  border: top 20px;
+  border-left: 20px;
 }
