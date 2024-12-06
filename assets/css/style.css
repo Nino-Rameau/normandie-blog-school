@@ -70,7 +70,7 @@ h2 {
 
 p {
   font-family: "inter", sans-serif;
-  background-color: white;
+  color: white;
 }
 
 /* BOUTON */
@@ -199,13 +199,6 @@ h2 {
   overflow: hidden;
 }
 
-h5 {
-  font-family: "inter", sans-serif;
-  color: #adb3b9;
-  text-align: center;
-  padding: 0.3em;
-}
-
 .carte .bouton-carte {
   padding: 0.5em 1.7em;
   display: block;
@@ -234,7 +227,7 @@ h5 {
   color: #000000;
   max-width: min-content;
   margin: auto;
-  font-size: 0.85rem;
+  font-size: 1rem;
   white-space: nowrap;
 }
 
