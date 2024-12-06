@@ -17,15 +17,12 @@
     />
   </head>
   <body>
-  <body>
     <header class="header">
       <a class="positionlogo" href="../index.html">
         <img class="imgheader" src="../assets/img/logo.png" alt="logo" />
       </a>
       <nav class="header-nav">
-        <a href="post.html" class="bouton btn-creer-post">
-          Créer un post</a
-        >
+        <a href="post.html" class="bouton btn-creer-post"> Créer un post</a>
         <a href="admin.html">
           <img src="../assets/img/alarme.gif" alt="Admin" class="img-alarme" />
         </a>
@@ -33,7 +30,7 @@
     </header>
 
     <main>
-      <h1>Faire un post :</h1>
+      <h1>Créer un post :</h1>
       <form class="form">
         <label for="nom">Nom</label>
         <input type="text" id="nom" maxlength="20" required />
@@ -68,23 +65,28 @@
         <fieldset>
           <legend>La spécialité de votre post :</legend>
           <div>
-            <input type="radio" id="annee1" name="spe" value="dev" required />
+            <input type="radio" id="dev" name="spe" value="dev" required />
             <label for="dev" class="dev-web">Développement Web</label>
           </div>
           <div>
-            <input type="radio" id="annee2" name="spe" value="com-graph" />
+            <input type="radio" id="com-graph" name="spe" value="com-graph" />
             <label for="com-graph" class="com-graph"
               >Communication Graphique</label
             >
           </div>
           <div>
-            <input type="radio" id="annee3" name="spe" value="com-digit" />
+            <input type="radio" id="com-digit" name="spe" value="com-digit" />
             <label for="com-digit" class="com-digit"
               >Communication Digitale</label
             >
           </div>
           <div>
-            <input type="radio" id="annee4" name="spe" value="market-digit" />
+            <input
+              type="radio"
+              id="market-digit"
+              name="spe"
+              value="market-digit"
+            />
             <label for="market-digit" class="market-digit"
               >Marketing Digital</label
             >
@@ -103,7 +105,7 @@
         ></textarea>
 
         <label for="fichier">Photo ou Fichier</label>
-        <input type="file" size="10mo" id="fichier" />
+        <input type="file" size="10" id="fichier" />
 
         <input type="submit" value="Envoyer" />
 
