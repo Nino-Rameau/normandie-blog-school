@@ -57,6 +57,15 @@ footer {
   align-items: center;
 }
 
+@media screen and (max-width: 720px) {
+  .positionlogo {
+    margin-left: 25px;
+  }
+  .img-alarme {
+    width: 60px;
+  }
+}
+
 /* TYPOGRAPHIE */
 /* ATTENTION PROPRIETE DE h1 ET h2 aussi dans CARTE plus bas*/
 h1 {
@@ -101,6 +110,14 @@ p {
 }
 .btn-creer-post:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 720px) {
+  .btn-creer-post {
+    max-width: min-content;
+    white-space: nowrap;
+    padding: 0px 10px;
+  }
 }
 
 .btn-spe-dev:hover {
@@ -175,7 +192,7 @@ h2 {
   border-radius: 25px;
   border-style: solid;
   border: 1px;
-  min-width: 120px;
+  min-width: 220px;
   background-color: #171717;
 }
 
